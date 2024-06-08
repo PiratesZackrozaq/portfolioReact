@@ -1,5 +1,5 @@
 import React from 'react';
-import { Bars3CenterLeftIcon } from '@heroicons/react/16/solid';
+import { Bars3Icon } from '@heroicons/react/20/solid';
 
 interface Props {
   openNav: () => void;
@@ -20,7 +20,7 @@ const Nav = ({ openNav }: Props) => {
           <li><a className="nav__link" href="#">Blog</a></li>
           <li><a className="nav__link" href="#">Contact</a></li>
         </ul>
-        <Bars3CenterLeftIcon onClick={openNav} className="w-[2.3rem] md:hidden h-[2.3rem] text-white rotate-180" />
+        <Bars3Icon onClick={openNav} className="w-[2.3rem] md:hidden h-[2.3rem] text-white rotate-180" />
       </div>
     </div>
   );
