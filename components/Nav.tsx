@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Bars3Icon } from '@heroicons/react/20/solid';
 
 interface Props {
@@ -6,8 +6,23 @@ interface Props {
 }
 
 const Nav = ({ openNav }: Props) => {
+  const [navSticky, setNavSticky] =useState(false)
+  useEffect(() => {
+    
+    const handler = () => {
+      if (window.scrollY >= 90) {
+        setNavSticky(true);
+      }
+      if (window.scrollY <= 90) {
+        setNavSticky(false);
+      }
+    };
+    window.addEventListener("scroll", handler);
+  }, []);
+  const stickyStyle = navSticky?`bg-[#212428] shadow-gray-900 shadow-sm`:``
+
   return (
-    <div className="fixed w-[100%] z-[1000] bg-gray-800">
+    <div className={`fixed w-[100%] ${stickyStyle} transition-all duration-300 z-[1000] `}>
       <div className="flex items-center h-[12vh] justify-between w-[80%] mx-auto">
         <div className="font-logo text-white text-[18px]">
           <span className="text-yellow-400 text-[30px] md:text-[40px]">WD</span>
