@@ -26,7 +26,7 @@ const Nav = ({ openNav }: Props) => {
       <div className="flex items-center h-[12vh] justify-between w-[80%] mx-auto">
         <div className="font-logo text-white text-[18px]">
           <span className="text-yellow-400 text-[30px] md:text-[40px]">WD</span>
-          Warriors
+          Pirates
         </div>
         <ul className="md:flex hidden items-center space-x-10">
           <li><a className="nav__link" href="#">Home</a></li>
