@@ -35,7 +35,6 @@ const ReviewSlider = () => {
             autoPlay={true}
             autoPlaySpeed={5000}
             centerMode={false}
-            infinite={true}
             itemClass="item"
         >
             <ClientReviewCard />
