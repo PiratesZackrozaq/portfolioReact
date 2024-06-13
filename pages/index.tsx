@@ -7,7 +7,6 @@ import Skills from "@/components/Skills";
 import Project from "@/components/Project";
 import Price from "@/components/Price";
 import Reviews from "@/components/Reviews";
-import Footer from "@/components/Footer";
 import Blog from "@/components/Blog";
 import React, { useState } from "react";
 
