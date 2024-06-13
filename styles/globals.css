@@ -6,9 +6,7 @@
 
 @layer components {
     .nav__link {
-        @apply relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px]
-        after:bg-yellow-400 text-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition
-        after:duration-300 after:origin-right
+        @apply relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-yellow-400 text-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-right
     }
 
     .custom-bg {
@@ -37,7 +35,7 @@
     bottom: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, #323232 0, #3f3f3f 40%, #1c1c1c 150%), linear-gradient(to top, rgba(0,8,255,0.4) 0, rgba(70, 14, 255, 0.25)200%);
+    background: linear-gradient(to bottom, #323232 0, #3f3f3f 40%, #1c1c1c 150%), linear-gradient(to top, rgba(0, 8, 255, 0.4) 0, rgba(70, 14, 255, 0.25)200%);
     background-blend-mode: multiply;
     clip-path: circle(50px at 95% 4%);
     border-radius: 0.5rem;
@@ -47,4 +45,60 @@
 .custom__service:hover::before {
     clip-path: circle(1000px at 95% 4%);
     z-index: -1000;
+}
+
+.Box {
+    padding: 5% 2.5%;
+    background: black;
+    bottom: 0;
+    width: 100%;
+
+    @media (max-width: 1000px) {}
+
+    .FooterContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 1000px;
+        margin: 0 auto;
+        /* background: red; */
+    }
+
+    .Row {
+        display: grid;
+        grid-template-columns: repeat(auto-fill,
+                minmax(185px, 1fr));
+        grid-gap: 20px;
+
+        @media (max-width: 1000px) {
+            grid-template-columns: repeat(auto-fill,
+                    minmax(200px, 1fr));
+        }
+    }
+
+    .Column {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-left: 60px;
+    }
+
+    .Heading {
+        font-size: 24px;
+        color: #fff;
+        margin-bottom: 40px;
+        font-weight: bold;
+    }
+
+    .FooterLink {
+        color: #fff;
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-decoration: none;
+ 
+    &:hover {
+        color: green;
+        transition: 200ms ease-in;
+    }
+    }
 }
