@@ -31,13 +31,17 @@ const ReviewSlider = () => {
             responsive={responsive}
             additionalTransfrom={0} // means to render carousel on server-side.
             arrows={true}
-            infinite={true}
+            infinite
             autoPlay={true}
             autoPlaySpeed={5000}
             centerMode={false}
             itemClass="item"
         >
-            <ClientReviewCard />
+            <ClientReviewCard 
+            image="/images/user1.png" 
+            user="Andy" 
+            role="Web Developer" 
+            />
         </Carousel>
     )
 };
