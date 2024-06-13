@@ -7,6 +7,7 @@ import Skills from "@/components/Skills";
 import Project from "@/components/Project";
 import Price from "@/components/Price";
 import Reviews from "@/components/Reviews";
+import Footer from "@/components/Footer";
 import React, { useState } from "react";
 
 const Homepage = () => {
@@ -25,6 +26,7 @@ const Homepage = () => {
             <Project />
             <Price />
             <Reviews />
+            <Footer />
         </div>
     );
 };
