@@ -19,6 +19,14 @@ const Blog = () => {
                         image="/images/b1.png"
                     />
                 </div>
+                <div>
+                    <BlogCard
+                        title="Blogging Pictures! Photo by Kenny Eliason on Unsplash"
+                        comment="10"
+                        date="4 June 2024"
+                        image="/images/b2.jpg"
+                    />
+                </div>
             </div>
         </div>
     )
