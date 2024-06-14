@@ -8,6 +8,8 @@ import Project from "@/components/Project";
 import Price from "@/components/Price";
 import Reviews from "@/components/Reviews";
 import Blog from "@/components/Blog";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 import React, { useState } from "react";
 
 const Homepage = () => {
@@ -27,6 +29,8 @@ const Homepage = () => {
             <Price />
             <Reviews />
             <Blog />
+            <Contact />
+            <Footer />
         </div>
     );
 };
